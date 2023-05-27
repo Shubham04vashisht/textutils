@@ -42,20 +42,20 @@ export default function Txtform(props) {
         color:props.mode==='dark'?'white':'black' ,backgroundColor:props.mode==='dark'?'#252732c4':'white'}} 
         ></textarea>
       </div>
-      <button type="button" className={`btn btn-${props.mode}`} onClick={handleUpClick}>
+      <button type="button" className={`btn btn-${props.mode} mx-1 my-2` } onClick={handleUpClick}>
         Convert To UpperCase
       </button>
       <button
         type="button"
-        className={`btn btn-${props.mode} mx-1`} 
+        className={`btn btn-${props.mode} mx-1 my-2`} 
         onClick={handleDownClick}
       >
         Convert To LowerCase
       </button>
-      <button className={`btn btn-${props.mode} mx-1`}  onClick={handleCopy}>
+      <button className={`btn btn-${props.mode} mx-1 my-2`}  onClick={handleCopy}>
         Copy Text
       </button>
-      <button className= {`btn btn-${props.mode} mx-1`} onClick={handleExtraSpaces}>
+      <button className= {`btn btn-${props.mode} mx-1 my-2`} onClick={handleExtraSpaces}>
         Remove extra spaces
       </button>
       <div className="my-4" style={{color:props.mode==='dark'?'white':'black'}} >
