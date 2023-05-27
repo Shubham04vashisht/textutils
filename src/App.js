@@ -4,7 +4,7 @@ import Txtform from "./components/Txtform";
 import Alert from "./components/Alert";
 import { useState } from "react";
 import About from "./components/About";
-import {BrowserRouter as Main, Routes, Route} from "react-router-dom";
+import {HashRouter as Main, Routes, Route} from "react-router-dom";
 function App() 
 {
   const [mode, setMode] = useState("primary");
