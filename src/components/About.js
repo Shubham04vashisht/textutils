@@ -1,3 +1,7 @@
+/*
+-------about section is not been used while deployment as github pages are not compatible with react routers.-------
+
+
 import React from "react";
 
 export default function About(props) {
@@ -113,4 +117,4 @@ export default function About(props) {
       </div>
     </div>
   );
-}
+}*/

@@ -3,8 +3,8 @@ import Navbar from "./components/Navbar";
 import Txtform from "./components/Txtform";
 import Alert from "./components/Alert";
 import { useState } from "react";
-import About from "./components/About";
-import {HashRouter as Main, Routes, Route} from "react-router-dom";
+//import About from "./components/About";
+//import {BrowserRouter as Main, Routes, Route} from "react-router-dom";
 function App() 
 {
   const [mode, setMode] = useState("primary");
@@ -33,17 +33,25 @@ function App()
     }
   };
   return (
-    <Main>
    <div>
-        <Navbar title="textUtils" home="Home" about="About" mode={mode} txt={btntxt} click={handleOnClick}/>
-        <Alert alert={alert} /> 
-        <Routes>
-          <Route exact path="/" element={<Txtform heading="Enter text to analyze-" mode={mode} showAlert={showAlert}/> } />
-          <Route exact path="/About" element={<About mode={mode} /> }/>  
-        </Routes>  
+      <Navbar title="textUtils" home="Home" about="About" mode={mode} txt={btntxt} click={handleOnClick}/>
+      <Alert alert={alert} /> 
+      <Txtform heading="Enter text to analyze-" mode={mode} showAlert={showAlert}/> 
    </div>
-    </Main>
-  );
+  /*
+  -----------using react router---------------
+  <Main>
+   <div>
+      <Navbar title="textUtils" home="Home" about="About" mode={mode} txt={btntxt} click={handleOnClick}/>
+      <Alert alert={alert} /> 
+      <Routes>
+        <Route exact path="/" element={<Txtform heading="Enter text to analyze-" mode={mode} showAlert={showAlert}/>}/>
+        <Route exact path="/About" element={<About mode={mode} /> }/>  
+      </Routes>  
+   </div>
+  </Main>  
+        */
+       
+ );
 }
-
 export default App;

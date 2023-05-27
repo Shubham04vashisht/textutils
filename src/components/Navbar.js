@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import PropTypes from "prop-types";
-import {Link} from "react-router-dom";
+//import {Link} from "react-router-dom";
 
 export default function Navbar(props) {
 
@@ -8,20 +8,20 @@ export default function Navbar(props) {
     <div>
       <nav className = {`navbar navbar-expand-lg bg-${props.mode} text-white`} >
         <div className="container-fluid">
-          <Link className="navbar-brand text-light fs-4 fw-bolder " to="/" >
+          <a className="navbar-brand text-light fs-4 fw-bolder " href="/" >
             {props.title}
-          </Link>
+          </a>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link to= "/"  className="nav-link active text-light mx-4" aria-current="page">
+                <a href= "/"  className="nav-link active text-light mx-4" aria-current="page">
                   {props.home}
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
-                <Link to ="/about" className="nav-link text-light">
+                <a href ="/about" className="nav-link text-light">
                   {props.about}
-                </Link>
+                </a>
               </li>
             </ul>
             <form className="d-flex" role="search">
